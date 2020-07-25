@@ -15,7 +15,14 @@
                     <img src="<?php echo get_template_directory_uri() . "/img/logo.svg"; ?>" alt="site-logo">
                 </a>
             </div><!-- .logo --> 
-            
+            <?php 
+                $args = array(
+                    'theme_locaton' => 'main-menu',
+                    'container' => 'nav',
+                    'container_class' => 'main-menu'
+                );
+                wp_nav_menu($args);
+            ?>
         </div><!-- .navigation-bar --> 
     </div><!-- .header --> 
 </header>
