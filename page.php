@@ -6,3 +6,4 @@
 
 <?php endwhile; ?>
 
+<?php get_footer() . " " . date('Y'); ?>
