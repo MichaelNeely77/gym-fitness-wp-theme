@@ -24,3 +24,8 @@ function gymfitness_enqueue_scripts() {
     wp_enqueue_script('scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0', true);
 }
 add_action('wp_enqueue_scripts', 'gymfitness_enqueue_scripts');
+
+function gymfitness_setup() {
+    add_theme_support('post-thumbnails');
+}
+add_action('after_setup_theme', 'gymfitness_setup');
