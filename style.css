@@ -248,3 +248,11 @@ img {
     max-width: 80rem;
     margin: 0 auto;
 }
+
+/** Page with sidebars **/
+@media (min-width: 768px) {
+    .page.with-sidebar {
+        display: flex;
+        justify-content: space-between;
+    }
+}
