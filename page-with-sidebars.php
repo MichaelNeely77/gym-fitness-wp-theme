@@ -16,7 +16,7 @@
             endwhile; ?>
     </div>
 
-        <aside>
+        <aside class="sidebar">
             <h2>This is the sidebar</h2>
         </aside>
 

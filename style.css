@@ -255,4 +255,12 @@ img {
         display: flex;
         justify-content: space-between;
     }
+
+    .with-sidebar .page-content {
+        flex: 0 0 calc(70% - 2rem);
+    }
+
+    .with-sidebar .sidebar {
+        flex: 0 0 calc(30% - 2rem);
+    }
 }
