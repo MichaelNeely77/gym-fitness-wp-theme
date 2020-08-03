@@ -15,11 +15,7 @@
             the_content(); 
             endwhile; ?>
     </div>
-
-        <aside class="sidebar">
-            <h2>This is the sidebar</h2>
-        </aside>
-
+    <?php get_sidebar(); ?>
 </main>
 
 
