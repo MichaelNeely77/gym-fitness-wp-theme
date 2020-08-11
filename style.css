@@ -44,7 +44,7 @@ body {
 /** HEADINGS **/
 h1, h2, h3 {
     font-family: var(--mainFont);
-    margin: 0.5rem 0;
+    margin: 5rem 0;
     line-height: 1.2rem;
 }
 
