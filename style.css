@@ -44,7 +44,7 @@ body {
 /** HEADINGS **/
 h1, h2, h3 {
     font-family: var(--mainFont);
-    margin: 5rem 0;
+    margin: .5rem 0;
     line-height: 1.2rem;
 }
 
@@ -354,4 +354,43 @@ p.content-class {
     font-family: var(--secondaryFont);
     font-size: 2.2rem;
     text-align: center;
+}
+
+.class-sidebar-content h3 {
+    line-height: 4rem;
+}
+
+
+/* Sidebar */
+
+.sidebar a {
+    color: var(--black);
+}
+
+.sidebar .widget {
+    margin-bottom: 2rem;
+}
+
+.sidebar-class {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.sidebar .sidebar-widget-image {
+    flex: 0 0 30%;
+}
+
+.sidebar .class-sidebar-content {
+    flex: 0 0 calc(70% - 2rem);
+}
+
+.sidebar .class-sidebar-content p {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.sidebar .classes-header {
+    margin: 2rem 0;
 }
