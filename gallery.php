@@ -20,13 +20,18 @@ get_header() ?>
         ?>
         <ul class="gallery-images">
             <?php 
-                $i=0;
+                $i = 0;
                 foreach($gallery_images_ids as $id): 
                 $size = ($i === 3 || $i === 6) ? 'portrait' : 'square';
                     $image = wp_get_attachment_image_src($id, $size); 
                     
                     ?>
-                <img src="<?php echo $image[0] ?>" alt="">
+                    <a href="<?php echo $image[0]; ?>" data-lightbox="gallery">
+                        <img src="<?php echo $image[0]; ?>" alt="">
+                    </a>
+                    
+
+                
            
 
                 <?php $i++; endforeach; ?>
