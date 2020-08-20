@@ -27,9 +27,12 @@ get_header() ?>
                     $imageThumb = wp_get_attachment_image_src($id, $size); 
                     
                     ?>
-                    <a href="<?php echo $image[0]; ?>" data-lightbox="gallery">
-                        <img src="<?php echo $imageThumb[0]; ?>" alt="">
-                    </a>
+                    <li>
+                        <a href="<?php echo $image[0]; ?>" data-lightbox="gallery">
+                            <img src="<?php echo $imageThumb[0]; ?>" alt="">
+                        </a>
+                    </li>
+                    
                     
 
                 
