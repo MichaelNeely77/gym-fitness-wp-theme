@@ -242,6 +242,7 @@ img {
 
 .page h1 {
     margin-bottom: 4rem;
+    line-height: 4.8rem;
 }
 
 .page.no-sidebars {
@@ -266,12 +267,14 @@ img {
 }
 
 
-.classes-list {
+.classes-list,
+.blog-entries {
     margin-top: 4rem;
 }
 
 @media (min-width: 768px) {
-    .classes-list {
+    .classes-list,
+    .blog-entries {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -346,6 +349,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
     color: var(--primary);
     font-size: 2rem;
     font-weight: 700;
+}
+
+.card .card-content .date-published {
+    color: var(--white);
+}
+
+.card .card-content .date-published span {
+    color: var(--primary);
 }
 
 /** Single Class **/
@@ -440,7 +451,7 @@ p.content-class {
 }
 
 /** Blog page **/
-/* 
-h2.blog-page-post-title {
-    line-height: 5.2rem;
-} */
+
+h3.blog-page-title {
+    line-height: 4rem;
+}
