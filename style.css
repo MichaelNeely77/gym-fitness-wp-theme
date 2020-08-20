@@ -438,3 +438,9 @@ p.content-class {
         grid-row: 2 / 4;
     }
 }
+
+/** Blog page **/
+/* 
+h2.blog-page-post-title {
+    line-height: 5.2rem;
+} */
