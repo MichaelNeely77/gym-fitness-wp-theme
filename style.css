@@ -352,12 +352,55 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 }
 
 .card .card-content .date-published {
-    color: var(--white);
+    color: var(--black);
 }
 
 .card .card-content .date-published span {
     color: var(--primary);
 }
+
+@media (min-width: 768px) {
+    .card .card-content .date-published {
+        color: var(--white);
+    }
+}
+
+/** Categories **/
+
+.post-categories {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+    .post-categories {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        z-index: 2;
+    }
+}
+
+.post-categories li {
+    margin-right: 2rem;
+}
+
+.post-categories li:last-of-type {
+    margin-right: 0;
+}
+
+.post-categories a {
+    background-color: var(--primary);
+    border-radius: .5rem;
+    color: var(--white);
+    font-size: 2.2rem;
+    font-family: var(--mainFont);
+    padding: .5rem 2rem;
+    
+}
+
+
 
 /** Single Class **/
 p.content-class {
