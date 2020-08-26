@@ -103,6 +103,8 @@ img {
 
 /** header **/
 
+
+
 .logo {
     display: flex;
     justify-content: center;
@@ -118,6 +120,22 @@ img {
         display: flex;
         justify-content: space-between;
     }
+}
+
+/** Front header **/
+
+body.home .site-header {
+    height: 100vh;
+    min-height: 65rem;
+    padding: 2rem;
+}
+
+@media (min-width: 768px) {
+    body.home .header-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+
 }
 
 /** Main menu **/
@@ -551,4 +569,8 @@ div.wpcf7 .ajax-loader {
 span.wpcf7-not-valid-tip {
     background-color: #f00;
     color: var(--white);
+}
+
+#map {
+    height: 300px;
 }
