@@ -7,6 +7,26 @@
     
     
     </section>
+
+    <section class="section-areas">
+        <ul class="areas-containers">
+            <li class="area">
+            
+                <?php 
+                    $area1 = get_field('area_1'); 
+                    
+                    echo "<pre>";
+                    
+                        var_dump($area1);    
+                    echo "</pre>";
+
+                ?>
+
+            </li>
+        
+        </ul>
+    
+    </section>
 <?php endwhile; ?> 
 
 <?php get_footer(); ?>
