@@ -596,3 +596,65 @@ span.wpcf7-not-valid-tip {
 #map {
     height: 300px;
 }
+
+/** Homepage **/
+/** Areas **/
+
+.areas-containers {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.areas-containers .area {
+    flex: 0 0 50%;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+@media (min-width: 786px) {
+    .areas-containers .area {
+        flex: 0 0 25%;
+    }
+}
+
+.areas-containers .area::after  {
+    content: '';
+    background: linear-gradient(
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.75)
+    );
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.areas-containers .area p {
+    position: absolute;
+    margin: auto;
+    color: var(--white);
+    z-index: 10;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+@media (min-width: 768px) {
+    .areas-containers .area p {
+        opacity: 0;
+        transition: opacity .3s ease;
+    }
+
+    .areas-containers .area:hover  p{
+        opacity: 1;
+    }
+}
+
+.area img {
+    height: 350px;
+    object-fit: cover;
+}
