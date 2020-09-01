@@ -1,10 +1,11 @@
 <?php 
 
-function gymfitness_classes_list() {?>
+function gymfitness_classes_list($number = -1) {?>
     <ul class="classes-list">
         <?php
             $args = array(
                 'post_type' => 'gymfitness_classes',
+                'posts_per_page' => $number
 
             );
             $classes = new WP_Query($args);
