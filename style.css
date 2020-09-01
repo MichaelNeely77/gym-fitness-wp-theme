@@ -684,3 +684,6 @@ span.wpcf7-not-valid-tip {
     object-fit: cover;
 }
 
+.classes-homepage {
+    background-color: var(--lightGray);
+}

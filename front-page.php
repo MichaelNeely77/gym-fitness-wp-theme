@@ -70,6 +70,29 @@
             </div>
         </div>
     </section>
+    <section class="instructors container section">
+        <h2 class="text-center">Our Instructors</h2>
+        <p class="text-center">{Professional instructor who can help you achieve your goals</p>
+        <ul class="instructor-list">
+            <?php 
+                $args = array(
+                    'post_type' => 'instructors',
+                    'posts_per_page' => 20
+                );
+                $instructors = new WP_Query($args);
+                while($instructors->have_posts()): $instructors->the_post(); ?>
+                    <li class="instructor">
+                        <h3><?php the_title(); ?></h3>
+                    </li>
+
+                <?php endwhile; wp_reset_postdata();
+            
+            ?>
+        </ul>
+    </section>
+
+
+
 <?php endwhile; ?> 
 
 <?php get_footer(); ?>
