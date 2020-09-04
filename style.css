@@ -687,3 +687,17 @@ span.wpcf7-not-valid-tip {
 .classes-homepage {
     background-color: var(--lightGray);
 }
+
+
+/** Instructors **/
+
+
+
+.instructor-list li {
+    margin: 2rem 0;
+    border-bottom: 1px solid var(--lightGray);
+}
+
+.instructor .content {
+    padding: 3 rem;
+}
