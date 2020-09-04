@@ -691,6 +691,10 @@ span.wpcf7-not-valid-tip {
 
 /** Instructors **/
 
+.instructor h3 {
+    margin: 5rem;
+    color: var(--primary);
+}
 
 
 .instructor-list li {
@@ -698,6 +702,46 @@ span.wpcf7-not-valid-tip {
     border-bottom: 1px solid var(--lightGray);
 }
 
+@media (min-width: 768px) {
+    .instructor-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .instructor {
+        flex: 0 0 calc(50% - 2rem);
+        position: relative;
+        margin-bottom: 4rem;
+    }
+}
+
 .instructor .content {
     padding: 3 rem;
+}
+
+@media (min-width: 768px) {
+    .instructor .content {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.75);
+        color: var(--white);display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+    }
+
+    .instructor:hover .content {
+        opacity: 1;
+        transition-delay: .3s;
+    }
+}
+
+.instructor img {
+    display: block;
+    height: 350px;
+    object-fit: cover;
 }
