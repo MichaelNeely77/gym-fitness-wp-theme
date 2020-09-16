@@ -745,3 +745,12 @@ span.wpcf7-not-valid-tip {
     height: 350px;
     object-fit: cover;
 }
+
+.instructor .tag {
+    background-color: var(--primary);
+    padding: .5rem 2rem;
+    border-radius: .5rem;
+    color: var(--white);
+    font-family: var(--mainFont);
+    font-size: 2.2rem;
+}
