@@ -4,5 +4,10 @@ jQuery(document).ready(function($) {
         // appendTo: '.site-header'
     });
 
+    // Run bxslider on testimonials
+    $('.testimonials-list').bxSlider();
+
+    
+
 });
 

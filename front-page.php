@@ -77,7 +77,7 @@
 
     </section>
     <section class="testimonials">
-        <h2 class="text-center">Testimonials</h2>
+        <h2 class="text-center tesitmonial-title">Testimonials</h2>
         <div class="container">
             <ul class="testimonials-list">
                 <?php 
