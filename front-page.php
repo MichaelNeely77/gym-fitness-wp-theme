@@ -78,7 +78,7 @@
     </section>
     <section class="testimonials">
         <h2 class="text-center tesitmonial-title">Testimonials</h2>
-        <div class="container">
+        <div class="container-testimonials">
             <ul class="testimonials-list">
                 <?php 
                     $args = array(
