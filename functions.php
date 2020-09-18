@@ -55,9 +55,6 @@ function gymfitness_setup() {
     add_image_size( 'mediumSize', 700, 400, true );
     add_image_size( 'blog', 966, 644, true );
 
-
-
-
     add_theme_support('post-thumbnails');
 
     add_theme_support('title-tag');
